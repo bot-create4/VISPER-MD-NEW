@@ -2,7 +2,7 @@
   "name": "VISPER-MD",
   "version": "3.0.0",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Visper",
+    "start": "pm2 start start.js --deep-monitoring --attach --name Visper",
     "stop": "pm2 stop Visper",
     "restart": "git pull && npm stop && npm start",
     "stash": "git stash && git stash drop"
@@ -11,7 +11,7 @@
     "@adiwajshing/keyed-db": "latest",
     "@ffmpeg-installer/ffmpeg": "latest",
     "axios": "latest",
-      "@whiskeysockets/baileys": "npm:dcm-baileys-pro",
+      "@whiskeysockets/baileys": "npm:visper-baileys",
     "buffer": "latest",
      "translate-google-api": "latest",
      "javascript-obfuscator": "latest",
@@ -46,7 +46,7 @@
     "sadasytsearch": "latest",
     "seedr": "latest",
     "sequelize": "latest",
-   "sharp": "^0.34.1",
+   "sharp": "^0.32.6",
     "wa-sticker-formatter": "^4.3.2",
     "ytsearch-venom": "latest"
   },
